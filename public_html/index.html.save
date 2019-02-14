@@ -16,7 +16,8 @@
 </html>
 
 
-
-<div class="jumbotron">
-  <h1 class="display-4">Welcome to Simran's webpage.</h1>
+<div class="container">
+  <div class="alert alert-success">
+    Success!
+  </div>
 </div>
