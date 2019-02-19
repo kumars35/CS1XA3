@@ -1,0 +1,20 @@
+
+#Part 3
+
+# Puts each line from every file of your project with the tag #TODO into a file todo.log
+
+
+
+(grep -r -h "#TODO" --exclude="todo.log" --exclude="ProjectAnalyze.sh" --exclude="changes.log" .) > todo.log
+
+read -p "Would you like to view the file - todo.log? Y/N " ans2
+
+if [ $ans2 == "Y" ]
+
+then 
+
+    vim todo.log
+
+else
+
+    echo "The file has been created."  # grep function searches for PATTERN in each file or standard input
