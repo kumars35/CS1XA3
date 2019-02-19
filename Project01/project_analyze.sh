@@ -1,7 +1,7 @@
 #!/bin/bash
 
 printf "Welcome to my Project. I have various fascinating features for you, which one would you like to see?"
-printf "\nA: Make a todo.log file with files that have #Todo. \nB: Find out how many of  HTML, Javascript, CSS, Python, Haskell and Bash Script files you have."
+printf "\nA: Make a todo.log file with files that have the tag #Todo. \nB: Find out how many of  HTML, Javascript, CSS, Python, Haskell and Bash Script files you have."
 printf "\nPlease enter your choice:"
 read selected
 if [ $selected = 'A' ];then
