@@ -1,6 +1,6 @@
-Welcome to my first 1XA3 Project Part 1.
+Welcome to my first 1XA3 Project.
 
-This project implements features 5.1, 5.2 and 5.5.
+This project implements features 5.1, 5.2, 5.5 as well as 5.3.
 
 5.1
 This part of my project includes an interactive script. It asks the user which feature it would like to see and uses if statements (be sure that the user input should be capital 
