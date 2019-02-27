@@ -2,6 +2,7 @@
 
 printf "Welcome to my Project. I have various fascinating features for you, which one would you like to see?"
 printf "\nA: Make a todo.log file with files that have the tag #Todo. \nB: Find out how many of  HTML, Javascript, CSS, Python, Haskell and Bash Script files you have."
+printf "\nC: Make a compile_fail.log file with all Python and Haskell files found to have syntax error."
 printf "\nPlease enter your choice:"
 read selected
 if [ $selected = 'A' ];then
@@ -104,4 +105,23 @@ if [ $selected = 'B' ];then
 	elif [ $selected2 = 'N' ];then
 		echo "Thank you"
 	fi
+fi
+if [ $selected = 'C' ];then
+        py_files=$(find ../ -name "*.py")
+	for file in $py_files; do
+		python3 -m py_compile "$file" 2>> compile_fail.log
+	done
+	hs_files=$(find ../ -name "*.hs")
+	for file in $hs_files; do
+                stack ghc --verbosity error "$file" 2>> compile_fail.log
+        done
+
+        printf "Do you wish to look at the compile_fail.log file?\nPick Y for Yes\nPick N for No:"
+        printf "\nPlease enter your choice:"
+        read selectedFile
+        if [ $selectedFile = 'Y' ];then
+                cat compile_fail.log
+        else
+                echo "Thank you, the compile_fail.log file has been made."
+        fi
 fi

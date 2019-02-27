@@ -47,6 +47,21 @@ On the other hand, if N
 no is picked, using echo, "Thank you" 
 is displayed.
 
+5.3 (Feature C):
+This feature finds all files with fail to compile (have syntax errors) in them and puts them into the compile_fail.log file. First, Python and Haskell files are found respectively
+then for loop if used to put all Python and Haskell files respectively that fail to compile into the compile_fail.log file.
+
+5.3 Custon Feature:
+After I compile all files, I ask if the user would like to view the compile_error.log file. 
+
+If Y (be sure to pick capital Y), yes is picked, 
+the cat compile_error.log command is used
+in my script to display what is in my file.
+
+On the other hand, if Y 
+(be sure to use capital N),
+no is picked, usuing echo, 
+"Thank you, the todo.log file has been made." is displayed.
 
 
 

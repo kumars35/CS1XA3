@@ -1,1 +1,2 @@
-
+./Project01.save:# Puts each line from every file of your project with the tag #TODO into a file todo.log
+./Project01.save:(grep -r -h "#TODO" --exclude="todo.log" --exclude="ProjectAnalyze.sh" --exclude="changes.log" .) > todo.log
