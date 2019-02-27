@@ -4,7 +4,7 @@ This project implements features 5.1, 5.2, 5.5 as well as 5.3.
 
 5.1
 This part of my project includes an interactive script. It asks the user which feature it would like to see and uses if statements (be sure that the user input should be capital 
-letter(s)) in order to go to the specific feature accordingly where A is 5.2 and B is 5.5.
+letter(s)) in order to go to the specific feature accordingly where A is 5.2, B is 5.5 and C is 5.3.
 
 5.2 (Feature A):
 This feature takes each file in the repo that includes #TODO and puts it into the todo.log file. I utilized the grep function in order to find for the #TODO tag.
