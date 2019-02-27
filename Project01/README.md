@@ -58,7 +58,7 @@ If Y (be sure to pick capital Y), yes is picked,
 the cat compile_error.log command is used
 in my script to display what is in my file.
 
-On the other hand, if Y 
+On the other hand, if N 
 (be sure to use capital N),
 no is picked, usuing echo, 
 "Thank you, the todo.log file has been made." is displayed.
