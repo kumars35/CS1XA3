@@ -1,0 +1,14 @@
+elm mmodelvar : Model -> Html Msg
+modelvar model =
+  div []
+      [ input [ placeholder "String 1" ]
+          []
+      , input [ placeholder "String 2" ]
+          []
+      , div []
+      [ text ": " ]
+      , a [href "https://mac1xa3.ca/u/kumars35/"]
+      [ text "https://mac1xa3.ca/u/kumars35/" ]
+      ]
+
+
