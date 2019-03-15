@@ -1,258 +1,512 @@
 <!DOCTYPE html>
+
 <html>
+
 	<head>
+
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 		<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css'>
+
 			<title>Resume</title>		
+
 		
+
 		
+
 		<style>
+
 			:root {  --container-bg-color: #333;    --left-button-hover-color: rgba(161, 11, 11, 0.3);  
+
 							--right-button-hover-color: rgba(92, 92, 92, 0.3);  --hover-width: 65%;  --other-width: 35%;  --speed: 1000ms;}
+
 			html, body {  padding:0;  margin:0;  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  width: 100%;
+
 							height: 100%;  overflow-x: hidden;}
+
 			.w3-myfont { font-family: "Comic Sans MS", cursive, sans-serif;}
+
 			.w3-calibri { font-family: 'Calibri', serif;}
+
 			.w3-times { font-family: "Times New Roman", serif;}
+
 			.tab {display:inline-block; margin-left: 900px; }
+
 			.button {  display: block;  position: absolute;  left: 50%;  top: 40%;  height: 2.5rem;  padding-top: 1.3rem;  width: 15rem;  text-align: center;
+
 					color: red;  border: #fff solid 0.2rem;  font-size: 1rem;  font-weight: bold;  text-transform: uppercase;  text-decoration: none;
+
 					Transform: translateX(-50%); margin-left: 70px}
+
 			
+
 			.split.left .button:hover {	background-color: var(--left-button-hover-color);  border-color: var(--left-button-hover-color);}
+
 			.split.right .button:hover {  background-color: var(--right-button-hover-color);  border-color: var(--right-button-hover-color);}
+
 			.container {  position: relative;  width: 100%;  height: 100%;  background: var(--container-bg-color);}
+
 			.split {  position: absolute;  width: 50%;  height: 100%;  overflow: hidden;}
+
 			.split.left {  left:0;  background: url("http://akahele.org/wp-content/uploads/2018/12/continental-gold-invitation-background-material-vertical-version-with-images-plans-4.jpg") center center no-repeat;  background-size: cover;}
+
 			.split.left:before {  position:absolute;  content: "";  width: 100%;  height: 100%;  background: var(--left-bg-color);}
+
 			.split.right {  right:0;  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKIHGUcw57_SrSefbd5ahwO9oBrix2tiG0soZ8_2io90d-wr73") center center no-repeat;  background-size: cover;}
+
 			.split.right:before {  position:absolute;  content: "";  width: 100%;  height: 100%;  background: var(--right-bg-color);}
+
 			.split.left, .split.right, .split.right:before, .split.left:before {  transition: var(--speed) all ease-in-out;}
+
 			.hover-left .left {  width: var(--hover-width);}
+
 			.hover-left .right {  width: var(--other-width);}
+
 			.hover-left .right:before {  z-index: 2;}
+
 			.hover-right .right {  width: var(--hover-width);}
+
 			.hover-right .left {  width: var(--other-width);}
+
 			.hover-right .left:before {  z-index: 2;}
+
 			.click{ width: 50%;  height: 100%; background-color: #5DADE2}
+
 			.typew{ color: #F4D03F; margin-left: 285px; margin-right: 285px ; height: 200%}
+
 			.whitetext{color: white}
+
 			.split.right .button:hover {  background-color: var(--right-button-hover-color); border-color: var(--right-button-hover-color);}
+
 			
+
 			
+
 			.header { padding: 7px 50px;  background: #D6EAF8 ;  color: crimson;
+
 					border-radius: 25px; margin-top: 70px; margin-bottom: 20px; margin-right: 170px; margin-left: 130px;
+
 					}
+
 			div.scrollmenu {  background-color: #333;  overflow: auto;  white-space: nowrap;}
+
 			div.scrollmenu a {  display: inline-block;  color: white;  text-align: center;  padding: 14px;  text-decoration: none;}
+
 			div.scrollmenu a:hover {  background-color: #777;}
+
 			
+
 			.icon-button {	background-color: white;border-radius: 3.6rem;cursor: pointer;display: inline-block;font-size: 2.0rem;
+
 							height: 3.6rem;	line-height: 3.6rem;	margin: 0 5px;	position: relative;	text-align: center;	-webkit-user-select: none;
+
 						   -moz-user-select: none;	    -ms-user-select: none;	        user-select: none;	width: 3.6rem;}
+
 			
+
 			.icon-button span {	border-radius: 0;	display: block;	height: 0;	left: 50%;	margin: 0;	position: absolute;	top: 50%;
+
 							-webkit-transition: all 0.3s;	   -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; width: 0;}
+
 			
+
 			.icon-button:hover span {	width: 3.6rem;	height: 3.6rem;	border-radius: 3.6rem;	margin: -1.8rem;}
+
 			
+
 			.twitter span {	background-color: #4099ff;}
+
 			.facebook span {	background-color: #3B5998;}
+
 			.google-plus span {	background-color: #db5a3c;}
+
 			.linkedin span {	background-color: #3B5998;}}
+
 			
+
 			.icon-button i {	background: none;	color: white;	height: 3.6rem;	left: 0;	line-height: 3.6rem;	position: absolute;	top: 0;
+
 								-webkit-transition: all 0.3s;	   -moz-transition: all 0.3s;	     -o-transition: all 0.3s;  transition: all 0.3s;
+
 									width: 3.6rem;	z-index: 10;}
+
 			
+
 			.icon-button .icon-twitter {color: #4099ff;}
+
 			.icon-button .icon-facebook {color: #3B5998;}
+
 			.icon-button .icon-google-plus {color: #db5a3c;}
+
 			.icon-button .icon-linkedin {color: #3B5998;}
+
 			
+
 			.icon-button:hover .icon-twitter,
+
 			.icon-button:hover .icon-facebook,
+
 			.icon-button:hover .icon-google-plus
+
 			.icon-button:hover .icon-linkedin			
+
 			{	color: white;}
+
 			
+
 			
+
 		</style>
+
 	</head>
 
+
+
 	<body> 
+
 		<div class="container">
+
 			<div class="split left" >
+
 				
+
 				<center><h1 class="header w3-times">Simran Kumar</h1><center>
+
 					<center><h4>Phone: 647-621-3841</h4></center>
 
+
+
 					<center>
+
 					<a href="https://twitter.com/stylisimran
+
 " class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+
 					<a href="https://www.facebook.com/styli.simrann" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+
 					<a href="mailto:kumars35@mcmaster.ca" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+
 					<a href="https://www.linkedin.com/in/stylisimran/
+
 " class="icon-button linkedin"><i class="icon-linkedin"></i><span></span></a>
+
 					
+
 					</center>
+
 				<div class=""  ></br></br>
+
 					<h3><strong class="w3-times container " ><center>About Me</center></strong></h3>
+
 				</div>
+
 				</br>
+
 				<center><button class="click container" onclick="typeWriter()">Click Here</center></button>
+
 				<h5><p id="typewriter" class="typew"><center></center></p></h5>
+
 				<script>
+
 					var i = 0;
+
 					var txt = 'Hello, I would like to introduce myself as Simran Kumar. I enrolled in the Computer Science program at McMaster University in 2018 due to my passion for coding. I have been learning various coding languages such as Python, Haskell, Turing, Bash, Java, HTML, Javascript and CSS. Apart from my interest for programming, I have been a part of various extra curricular activities which have helped me develop various skills. For more information, feel free to read my resume on the right. Thank you for your time.'
+
 					var speed = 50;
-	
-					function typeWriter() {
-						if (i < txt.length) {
-							document.getElementById("typewriter").innerHTML += txt.charAt(i);
-							i++;
-							setTimeout(typeWriter, speed);
-						}
-					}
-				</script>
-				
-			</div>
-		
-			<div class="split right scrollmenu  whitetext">
-				<div class="w3-container w3-bottombar w3-border-red"  >
-					<h3 ><strong class="w3-times " >Highlights of Qualifications</strong></h3>
-				</div>
-		
-				<div>
-		
-					<ul >
-						<li  ><h6>Enrolled in level 1 of McMaster University’s Computer Science program</li>
-						<li  ><h6>Established as well as enhanced vital programming skills by participating in the ECOO Programming competition </br> representing White Oaks Secondary School<h6></li>
-						<li  ><h6>Developed great time management, teamwork and communication skills while working as an Event planner for </br> Virasat Peace Organization<h6></li>
-						<li  ><h6>Won a gold medal in the Halton Skills competition for robotics for demonstrating excellent skills for programming </br> autonomous robots<h6></li>
-						<li  ><h6>Won the title of Miss Young Canadian Achiever for demonstrating excellent communication skills, strong academics </br> as well as involvement in extracurricular activities<h6></li>
-					</ul>
-					
-				</div>
-				</br>	
-				<div class="w3-container w3-bottombar w3-border-red"  >
-					<h3><strong class="w3-times " >Experience</strong></h3>
-				</div>
-		
-				<div >
-					<h5 class="w3-calibri"><strong>Event Manager</strong> -December 2017 to February 2018</strong></h5>
-					<h5 class="w3-calibri"><strong>Virasat Peace Organization</strong> (Brampton, Ontario)</h5>
-					<ul >
-						<li><h6>Found the locations for the event and arranged transportation<h6></li>
-						<li><h6>Organized catering considering people’s dietary restrictions and allergies<h6></li>
-						<li><h6>Developed planning skills by ensuring everything stays within the budget<h6></li>
-						<li><h6>Demonstrated the ability to work under pressure and time management skills by having to complete all tasks </br> within the given time<h6></li>
-					</ul>
-				</div>
-				</br>
-				<div class="w3-container w3-bottombar w3-border-red"  >
-					<h3><strong class="w3-times " >Education</strong></h3>
-				</div>
-				<div>
-					<h5 class="w3-calibri"><strong>Bachelor of Applied Sciences, Computer Science I -Expected Completion April 2022</strong></h5>
-					<h6><strong>McMaster University, Hamilton ON<strong><h6>
-						<h6>Awarded the McMaster Dean’s Excellence Entrance Scholarship for having an admission average exceeding 94% and </br> demonstrating leadership experience, participation in extracurricular activities as well as volunteering.<h6>
-			
-					<h5 class="w3-calibri"><strong></br>Relevant Courses:</strong></h5>
-					<div class="flip-box ">
-						<div class="flip-box-inner">
-							<div class="flip-box-front">
-								<h5 class="w3-calibri"><strong>Introduction to Computational Thinking (Grade Received B)</strong></h5>
-							</div>
-						<div class="flip-box-back ">
-							<h6>Introduction to programming topics needed in order to develop ideas concrete and establish the ability to contribute </br> towards the advancement of technology using Computational Thinking.<h6>
-					</div>
-					</br>
-					</div>
-					</div>
-					
-					<div class="flip-box">
-						<div class="flip-box-inner">
-							<div class="flip-box-front">
-								<h5 class="w3-calibri"><strong>Multimedia (Grade Received A-)</strong></h5>
-							</div>
-						<div class="flip-box-back">
-							<h6>Introduction to examine multiple media work that is computer-based. Using different softwares in order to study as </br> well as make multimedia creations which utilyze video, animation, audio and programming.</h6>
-					</div>
-				
-					</div>
-					</div>
-			
-				</div>
-				</br>
-				<div class="w3-container w3-bottombar w3-border-red"  >
-					<h3><strong class="w3-times " id="del_id">Skills</strong></h3>
-				</div>
-		
-				<h5 class="w3-calibri"><strong>Computer Programming and Software</strong></h5>
-				<div >
-					<ul >
-						<h6>Experience with programming with Python, Haskell, Turing, Bash, Java, HTML, Javascript and CSS<h6>
 
 	
-						<h6>Efficient with using Google Drive, Microsoft Word, PowerPoint and qualified with Adobe Premiere, Photoshop, </br> iMovie and Google Web Designer<h6>
-					</ul>
-				</div>
+
+					function typeWriter() {
+
+						if (i < txt.length) {
+
+							document.getElementById("typewriter").innerHTML += txt.charAt(i);
+
+							i++;
+
+							setTimeout(typeWriter, speed);
+
+						}
+
+					}
+
+				</script>
+
 				
-				<h5 class="w3-calibri"><strong>Laboratory and Safety</strong></h5>
-				<div >
-					<ul >
-						<h6>Completed the WHMIS health and safety course<h6>
-					</ul>
-				</div>
-				
-				<h5 class="w3-calibri"><strong>Languages</strong></h5>
-				<div >
-					<ul type='-' >
-						<h6>English (Verbal and Written)<h6>
-						<h6>Hindi (Verbal and Written)<h6>
-						<h6>French (Verbal)<h6>
-						<h6>Spanish (Verbal)<h6>
-					</ul>
-				</div>
-				</br>
-				<div class="w3-container w3-bottombar w3-border-red"  >
-					<h3><strong class="w3-times " >Extra Curricular Activities </strong></h3>
-				</div>
-				<ol style="list-style-type:none;">
-					<h5 class="w3-calibri"><strong>Graphic Designing</strong></h5>
-					<dl>
-						<dd><h6>Strengthened creative designing skills by contributing towards making the yearbook<h6></dd>
-					</dt>
-				</dl>
-			</li>	
-					<h5 class="w3-calibri"><strong>Participated In Plays</strong></h5>
-				<dl>
-					
-						<dd><h6>Displayed and improved performing,  communication as well as teamwork skills working with people of different </br> age and skills<h6></dd>
-					</dt>
-				</dl>
-			</li>
-					<h5 class="w3-calibri"><strong>Computer Hardware (Halton Robotics Team)</strong></h5>				<dl>
-					
-						<dd><h6>Developed skills of designing, making and working with robots </br> Strengthened leadership skills by teaching new members the skills of developing a robot<h6></dd>
-					</dt>
-				</dl>
-			</li>
-		</ol>
+
 			</div>
+
+		
+
+			<div class="split right scrollmenu  whitetext">
+
+				<div class="w3-container w3-bottombar w3-border-red"  >
+
+					<h3 ><strong class="w3-times " >Highlights of Qualifications</strong></h3>
+
+				</div>
+
+		
+
+				<div>
+
+		
+
+					<ul >
+
+						<li  ><h6>Enrolled in level 1 of McMaster University’s Computer Science program</li>
+
+						<li  ><h6>Established as well as enhanced vital programming skills by participating in the ECOO Programming competition </br> representing White Oaks Secondary School<h6></li>
+
+						<li  ><h6>Developed great time management, teamwork and communication skills while working as an Event planner for </br> Virasat Peace Organization<h6></li>
+
+						<li  ><h6>Won a gold medal in the Halton Skills competition for robotics for demonstrating excellent skills for programming </br> autonomous robots<h6></li>
+
+						<li  ><h6>Won the title of Miss Young Canadian Achiever for demonstrating excellent communication skills, strong academics </br> as well as involvement in extracurricular activities<h6></li>
+
+					</ul>
+
+					
+
+				</div>
+
+				</br>	
+
+				<div class="w3-container w3-bottombar w3-border-red"  >
+
+					<h3><strong class="w3-times " >Experience</strong></h3>
+
+				</div>
+
+		
+
+				<div >
+
+					<dd><h5 class="w3-calibri"><strong>Event Manager</strong> -December 2017 to February 2018</strong></h5></dd>
+
+					<dd><h5 class="w3-calibri"><strong>Virasat Peace Organization</strong> (Brampton, Ontario)</h5></dd>
+
+					<ul >
+
+						<li><h6>Found the locations for the event and arranged transportation<h6></li>
+
+						<li><h6>Organized catering considering people’s dietary restrictions and allergies<h6></li>
+
+						<li><h6>Developed planning skills by ensuring everything stays within the budget<h6></li>
+
+						<li><h6>Demonstrated the ability to work under pressure and time management skills by having to complete all tasks </br> within the given time<h6></li>
+
+					</ul>
+
+				</div>
+
+				</br>
+
+				<div class="w3-container w3-bottombar w3-border-red"  >
+
+					<h3><strong class="w3-times " >Education</strong></h3>
+
+				</div>
+
+				<div>
+
+					<dd><h5 class="w3-calibri"><strong>Bachelor of Applied Sciences, Computer Science I -Expected Completion April 2022</strong></h5></dd>
+
+					<dd><h6><strong>McMaster University, Hamilton ON<strong><h6></dd>
+
+						<dd><h6>Awarded the McMaster Dean’s Excellence Entrance Scholarship for having an admission average exceeding 94% and </br> demonstrating leadership experience, participation in extracurricular activities as well as volunteering.<h6></dd>
+
+			
+
+					<dd><h5 class="w3-calibri"><strong></br>Relevant Courses:</strong></h5></dd>
+
+					<div class="flip-box ">
+
+						<div class="flip-box-inner">
+
+							<div class="flip-box-front">
+
+								<dd><h5 class="w3-calibri"><strong>Introduction to Computational Thinking (Grade Received B)</strong></h5></dd>
+
+							</div>
+
+						<div class="flip-box-back ">
+
+							<dd><h6>Introduction to programming topics needed in order to develop ideas concrete and establish the ability to contribute </br> towards the advancement of technology using Computational Thinking.<h6></dd>
+
+					</div>
+
+					</br>
+
+					</div>
+
+					</div>
+
+					
+
+					<div class="flip-box">
+
+						<div class="flip-box-inner">
+
+							<div class="flip-box-front">
+
+								<dd><h5 class="w3-calibri"><strong>Multimedia (Grade Received A-)</strong></h5></dd>
+
+							</div>
+
+						<div class="flip-box-back">
+
+							<dd><h6>Introduction to examine multiple media work that is computer-based. Using different softwares in order to study as </br> well as make multimedia creations which utilyze video, animation, audio and programming.</h6></dd>
+
+					</div>
+
+				
+
+					</div>
+
+					</div>
+
+			
+
+				</div>
+
+				</br>
+
+				<div class="w3-container w3-bottombar w3-border-red"  >
+
+					<h3><strong class="w3-times " id="del_id">Skills</strong></h3>
+
+				</div>
+
+		
+
+				<dd><h5 class="w3-calibri"><strong>Computer Programming and Software</strong></h5></dd>
+
+				<div >
+
+					<ul >
+
+						<li  ><h6>Experience with programming with Python, Haskell, Turing, Bash, Java, HTML, Javascript and CSS<h6></li>
+
+
+
+	
+
+						<li  ><h6>Efficient with using Google Drive, Microsoft Word, PowerPoint and qualified with Adobe Premiere, Photoshop, </br> iMovie and Google Web Designer<h6></li>
+
+					</ul>
+
+				</div>
+
+				
+
+				</br><dd><h5 class="w3-calibri"><strong>Laboratory and Safety</strong></h5></dd>
+
+				<div >
+
+					<ul >
+
+						<li  ><h6>Completed the WHMIS health and safety course<h6></li>
+
+					</ul>
+
+				</div>
+
+				
+
+				</br><dd><h5 class="w3-calibri"><strong>Languages</strong></h5></dd>
+
+				<div >
+
+					<ul type='-' >
+
+						<li  ><h6>English (Verbal and Written)<h6></li>
+
+						<li  ><h6>Hindi (Verbal and Written)<h6></li>
+
+						<li  ><h6>French (Verbal)<h6></li>
+
+						<li  ><h6>Spanish (Verbal)<h6></li>
+
+					</ul>
+
+				</div>
+
+				</br>
+<div class="w3-container w3-bottombar w3-border-red"  >
+
+					<h3><strong class="w3-times " >Extra Curricular Activities </strong></h3>
+
+				</div>
+
+				<ol style="list-style-type:none;">
+
+					<h5 class="w3-calibri"><strong>Graphic Designing</strong></h5>
+
+					<dl>
+
+						<dd><h6>- Strengthened creative designing skills by contributing towards making the yearbook<h6></dd>
+
+					</dt>
+
+				</dl>
+
+			</li>	
+
+					<h5 class="w3-calibri"><strong>Participated In Plays</strong></h5>
+
+				<dl>
+
+					
+
+						<dd><h6>- Displayed and improved performing,  communication as well as teamwork skills working with people of different </br> age and skills<h6></dd>
+
+					</dt>
+
+				</dl>
+
+			</li>
+
+					<h5 class="w3-calibri"><strong>Computer Hardware (Halton Robotics Team)</strong></h5>				<dl>
+
+					
+
+						<dd><h6>- Developed skills of designing, making and working with robots </br> - Strengthened leadership skills by teaching new members the skills of developing a robot<h6></dd>
+
+					</dt>
+
+				</dl>
+
+			</li>
+
+		</ol>
+
+			</div>
+
 		</div>	
 
+
+
 	<script>
+
 		const left = document.querySelector(".left");
+
 		const right = document.querySelector(".right");
+
 		const container = document.querySelector(".container");
+
 		left.addEventListener("mouseenter", () => {container.classList.add("hover-left");});
+
 		left.addEventListener("mouseleave", () => {container.classList.remove("hover-left");});
+
 		right.addEventListener("mouseenter", () => {container.classList.add("hover-right");});
+
 		right.addEventListener("mouseleave", () => {container.classList.remove("hover-right");});
 
+
+
 	</script>
+
 	</body>
 
 
