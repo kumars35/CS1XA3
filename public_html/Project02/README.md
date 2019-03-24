@@ -23,6 +23,14 @@ https://www.google.com/imgres?imgurl=http://akahele.org/wp-content/uploads/2018/
 
 https://www.google.com/imgres?imgurl=https://jimrogersenergy.com/wp-content/uploads/2015/06/blue-dark-windows-desktop-wallpaper-wallpaper-blue-backgrounds-for-websites-wallpaperblue-dark-b$
 
+Part 4 - Server Setup:
+
+For part 4, I copied the project 2 directory to the public_html directory.
+Then I added the path of the webpagecv.html file such that the 
+link to my webpagecv.html page is 
+https://mac1xa3.ca/u/kumars35/Project02/webpagecv.html 
+This webpagecv page could be dirrected from the "Project02: CV/Resume Webpage" 
+link on my main page https://mac1xa3.ca/u/kumars35/
 
 Thank you for looking at my 1XA3 Project02.
 
