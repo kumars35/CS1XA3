@@ -1,6 +1,5 @@
 Hello, Welcome to Simran's 1XA3 Project02
 
-
 Part 1 - Making a CV/Resume webpage:
 
 I have my designed my webpage in two parts, left and right. The left side has my name, contact details as well as the about me section. If you move the mouse towards the left,
