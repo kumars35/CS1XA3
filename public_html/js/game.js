@@ -6,11 +6,11 @@ var dict = {
 
 var WordList =
     [
-        "JAR","MONKEY","REFERENCES","MACRO","UNZIP","MYSTIFY"
+        "HASKELL","JAR","ITALIAN","MONKEY","BEETROOT","BLUE","CANADA","FRIDGE","GOOGLE","DOG","PENCIL","MANGO"
     ];
 var HintList=
 	[
-		"This is an Object", "This is an Animal", "This is a Verb", "This is used in Excel Application","Decompress","Utterly bewilder or perplex"
+		"This is a functional programming language", "This is an object", "This is a food cuisine", "This is an animal", "This is a vegetable", "This is a colour", "This is a country", "This is a kitchen appliance", "This is a web browser", "This is an animal", "This is a stationary object", "This is a fruit"
 	];
 const maxTries = 9;         
 var guessedLetters = [];        
