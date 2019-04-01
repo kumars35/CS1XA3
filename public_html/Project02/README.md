@@ -37,6 +37,18 @@ The 9th wrong input is when the Hangman is hanged due to which the game is over 
 The user can press any key (except the backspace key) to start another round of the Hangman game. 
 Note: the backspace button is used to go back one page.
 
+The references I used for coding my app are:
+		https://www.w3schools.com/w3css/4/w3.css
+    https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css
+    https://getbootstrap.com/docs/4.0/getting-started/introduction/
+    https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css 
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js 
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js
+    https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js
+    https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js
+    
 I hope you liked the app as much as I liked coding it. 
 
 Part 4 - Server Setup:
