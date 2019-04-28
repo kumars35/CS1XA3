@@ -14,9 +14,12 @@ Leave the venv directory by the command -> $ cd ..
 You should be in the CS1XA3/project3 directory so enter project3 by the command -> cd project3
 
 Next, install the necessary packages that are listed in requirements.txt by the command -> 
-$ pip install -r requirements.txt $ pip install -r requirements/local.txt
+$ pip install -r requirements.txt 
 
-Run the command -> $ python manage.py runserver localhost:10032
+Exit project3 directory by the command -> $ cd ..
+Once you are in CS1XA3 run the command -> $ pip install -r requirements/local.txt
+
+Run the command (In CS1XA3 repository) -> $ python manage.py runserver localhost:10032
 
 If it says "Error: That port is already in use.":
 Then enter this command -> $ lsof -i :10032 after that a number below PID will be displayed so the next command
