@@ -1,6 +1,9 @@
 Welcome to my Project 3
 
-My Project 3 is a food delivery app which has different restaurants with different menu's as well as prices. 
+My Project 3 is a food delivery app which has different restaurants with different menu's as well as prices.
+Please feel free to look at the 2 more README.md files in the CS1XA3 repository as well as the FrontEnd directory in the CS1XA3 
+repository. These README.md files contain more knowledgable information in regards to this project. The information is not mixed in 
+this README.md file to avoid confusion and have more clarity. 
 
 To Run My Food Delivery App:
 
@@ -95,9 +98,5 @@ React
 Webconfig
 Single Page Application(static website)
 
-
-Please feel free to look at the 2 more README.md files in the CS1XA3 repository as well as the FrontEnd directory in the CS1XA3 
-repository. These README.md files contain more knowledgable information in regards to this project. The information is not mixed in 
-this README.md file to avoid confusion and have more clarity. 
 
 Thank you for your time.
