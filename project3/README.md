@@ -18,13 +18,15 @@ If a virtual environment is already activated, please deactivate it by the comma
 Then, activate the python virtual environment by the command -> $ source bin/activate
 
 Leave the venv directory by the command -> $ cd ..
-You should be in the CS1XA3/project3 directory so enter project3 by the command -> cd project3
+You should be in the CS1XA3/project3 directory so enter project3 by the command ->$ cd project3
 
 Next, install the necessary packages that are listed in requirements.txt by the command -> 
 $ pip install -r requirements.txt 
 
 Exit project3 directory by the command -> $ cd ..
+
 Once you are in CS1XA3 run the command -> $ pip install -r requirements.txt
+
 Then run $ pip install -r requirements/local.txt 
 
 Run the command (In CS1XA3 repository) -> $ python manage.py runserver localhost:10032
