@@ -17,7 +17,8 @@ Next, install the necessary packages that are listed in requirements.txt by the 
 $ pip install -r requirements.txt 
 
 Exit project3 directory by the command -> $ cd ..
-Once you are in CS1XA3 run the command -> $ pip install -r requirements/local.txt
+Once you are in CS1XA3 run the command -> $ pip install -r requirements.txt
+Then run $ pip install -r requirements/local.txt 
 
 Run the command (In CS1XA3 repository) -> $ python manage.py runserver localhost:10032
 
