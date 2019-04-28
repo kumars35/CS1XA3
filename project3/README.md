@@ -43,11 +43,17 @@ Server Side:
 Json Posts:
 Get/Post Requests as follows:
 url(r'restaurant/$', RestaurantAPI.as_view()), GET
+
 url(r'items/$', ItemsAPI.as_view()), GET
+
 url(r'items/(?P<restaurant_id>\d+)/$', ItemsByRestuarentAPI.as_view()), GET
+
 url(r'createOrder/$',CreateOrderAPI.as_view()), POST
+
 url(r'orders/$', OrderAPI.as_view()), GET
+
 url(r'api-token-auth/$', obtain_auth_token, name='api_token_auth'), POST
+
 url(r'register/$', UserRegistrationAPI.as_view()), POST
 
 
