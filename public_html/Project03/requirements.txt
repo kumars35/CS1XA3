@@ -1,3 +1,0 @@
-# Don't modify this file
-# Add new packages to requirements/base.txt or requirements/local.txt
--r requirements/production.txt
