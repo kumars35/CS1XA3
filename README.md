@@ -1,7 +1,11 @@
 # Project3
 # Introduction
 
-Write about your project in this area.
+Welcome to my Project 3
+
+My Project 3 is a food delivery app which has different restaurants with different menu's as well as prices. For more information about my project, how to use it and the features I included in my project please look at my README.md file in the project3 directory.
+
+Thank you for your time.
 
 # Developer Guide
 
