@@ -1,0 +1,420 @@
+ERROR 2019-04-27 07:59:22,741 django.request Internal Server Error: /api/v1/restuatents
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 477, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 395, in initial
+    self.check_permissions(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 328, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/permissions.py", line 129, in has_permission
+    'Cannot apply DjangoModelPermissions on a view that '
+AssertionError: Cannot apply DjangoModelPermissions on a view that does not set `.queryset` or have a `.get_queryset()` method.
+ERROR 2019-04-27 07:59:22,804 django.server "GET /api/v1/restuatents HTTP/1.1" 500 98264
+ERROR 2019-04-27 08:00:31,690 django.request Internal Server Error: /api/v1/restaurant
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 477, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 395, in initial
+    self.check_permissions(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 328, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/permissions.py", line 129, in has_permission
+    'Cannot apply DjangoModelPermissions on a view that '
+AssertionError: Cannot apply DjangoModelPermissions on a view that does not set `.queryset` or have a `.get_queryset()` method.
+ERROR 2019-04-27 08:00:31,756 django.server "GET /api/v1/restaurant HTTP/1.1" 500 98236
+ERROR 2019-04-27 08:01:04,917 django.request Internal Server Error: /api/v1/restaurant
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 477, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 395, in initial
+    self.check_permissions(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 328, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/permissions.py", line 129, in has_permission
+    'Cannot apply DjangoModelPermissions on a view that '
+AssertionError: Cannot apply DjangoModelPermissions on a view that does not set `.queryset` or have a `.get_queryset()` method.
+ERROR 2019-04-27 08:01:04,980 django.server "GET /api/v1/restaurant HTTP/1.1" 500 98370
+ERROR 2019-04-27 08:03:10,145 django.request Internal Server Error: /api/v1/restaurant
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 477, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 395, in initial
+    self.check_permissions(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 328, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/permissions.py", line 129, in has_permission
+    'Cannot apply DjangoModelPermissions on a view that '
+AssertionError: Cannot apply DjangoModelPermissions on a view that does not set `.queryset` or have a `.get_queryset()` method.
+ERROR 2019-04-27 08:03:10,223 django.server "GET /api/v1/restaurant HTTP/1.1" 500 98370
+ERROR 2019-04-27 08:03:12,330 django.request Internal Server Error: /api/v1/restaurant
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 477, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 395, in initial
+    self.check_permissions(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 328, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/permissions.py", line 129, in has_permission
+    'Cannot apply DjangoModelPermissions on a view that '
+AssertionError: Cannot apply DjangoModelPermissions on a view that does not set `.queryset` or have a `.get_queryset()` method.
+ERROR 2019-04-27 08:03:12,385 django.server "GET /api/v1/restaurant HTTP/1.1" 500 98371
+ERROR 2019-04-27 08:11:39,981 django.request Internal Server Error: /admin/logout/
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 242, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 359, in logout
+    return LogoutView.as_view(**defaults)(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/contrib/auth/views.py", line 154, in dispatch
+    next_page = self.get_next_page()
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/contrib/auth/views.py", line 164, in get_next_page
+    next_page = resolve_url(settings.LOGOUT_REDIRECT_URL)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/shortcuts.py", line 147, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+ERROR 2019-04-27 08:11:40,067 django.server "GET /admin/logout/ HTTP/1.1" 500 140384
+ERROR 2019-04-27 08:14:13,571 django.request Internal Server Error: /api/v1/restaurant
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/foodordering/views.py", line 12, in get
+    restuatents = Restaurant.objects.all()
+AttributeError: type object 'Restaurant' has no attribute 'objects'
+ERROR 2019-04-27 08:14:13,643 django.server "GET /api/v1/restaurant HTTP/1.1" 500 89526
+ERROR 2019-04-27 08:14:33,460 django.request Internal Server Error: /api/v1/restaurant
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/foodordering/views.py", line 12, in get
+    restuatents = Restaurant.objects.all()
+AttributeError: type object 'Restaurant' has no attribute 'objects'
+ERROR 2019-04-27 08:14:33,520 django.server "GET /api/v1/restaurant HTTP/1.1" 500 86847
+ERROR 2019-04-27 08:14:58,764 django.request Internal Server Error: /api/v1/restaurant
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/renderers.py", line 703, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/renderers.py", line 661, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/renderers.py", line 411, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/renderers.py", line 105, in render
+    separators=separators
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 438, in _iterencode
+    yield from _iterencode(o, _current_indent_level)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 428, in _iterencode
+    yield from _iterencode_list(o, _current_indent_level)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 437, in _iterencode
+    o = _default(o)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/utils/encoders.py", line 70, in default
+    return super(JSONEncoder, self).default(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'Restaurant' is not JSON serializable
+ERROR 2019-04-27 08:14:58,849 django.server "GET /api/v1/restaurant HTTP/1.1" 500 142810
+ERROR 2019-04-27 08:22:05,266 django.request Internal Server Error: /api/v1/items
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/foodordering/views.py", line 23, in get
+    return Response(serializers.data)
+AttributeError: module 'rest_framework.serializers' has no attribute 'data'
+ERROR 2019-04-27 08:22:05,321 django.server "GET /api/v1/items HTTP/1.1" 500 89672
+ERROR 2019-04-27 08:22:13,924 django.request Internal Server Error: /api/v1/items
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/foodordering/views.py", line 23, in get
+    return Response(serializers.data)
+AttributeError: module 'rest_framework.serializers' has no attribute 'data'
+ERROR 2019-04-27 08:22:13,977 django.server "GET /api/v1/items HTTP/1.1" 500 89806
+ERROR 2019-04-27 08:22:49,070 django.request Internal Server Error: /api/v1/items
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/foodordering/views.py", line 23, in get
+    return Response(serializer.data)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/serializers.py", line 657, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/serializers.py", line 484, in to_representation
+    fields = self._readable_fields
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/serializers.py", line 378, in _readable_fields
+    field for field in self.fields.values()
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/serializers.py", line 364, in fields
+    for key, value in self.get_fields().items():
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/serializers.py", line 994, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/serializers.py", line 1069, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: ("Creating a ModelSerializer without either the 'fields' attribute or the 'exclude' attribute has been deprecated since 3.3.0, and is now disallowed. Add an explicit fields = '__all__' to the ItemSerializer serializer.",)
+ERROR 2019-04-27 08:22:49,146 django.server "GET /api/v1/items HTTP/1.1" 500 133148
+ERROR 2019-04-27 08:29:01,635 django.request Internal Server Error: /api/v1/items
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() missing 1 required positional argument: 'restaurant_id'
+ERROR 2019-04-27 08:29:01,700 django.server "GET /api/v1/items HTTP/1.1" 500 86434
+ERROR 2019-04-27 08:50:51,453 django.request Internal Server Error: /api/v1/orders/
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/foodordering/views.py", line 58, in post
+    order = Order(user=user['id'], item=item['id'])
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/db/models/base.py", line 553, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 216, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "1": "Order.user" must be a "User" instance.
+ERROR 2019-04-27 08:50:51,517 django.server "POST /api/v1/orders/ HTTP/1.1" 500 101026
+ERROR 2019-04-27 08:51:51,453 django.request Internal Server Error: /api/v1/orders/
+Traceback (most recent call last):
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/foodordering/views.py", line 59, in post
+    order = Order(user=User.objects.get(user['id']), item=Item.objects.get(item['id']))
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/db/models/query.py", line 371, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/db/models/query.py", line 782, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/db/models/query.py", line 800, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1261, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1287, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/300047924/workspaces/hashedin/Project3/venv/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1162, in build_filter
+    arg, value = filter_expr
+TypeError: 'int' object is not iterable
+ERROR 2019-04-27 08:51:51,533 django.server "POST /api/v1/orders/ HTTP/1.1" 500 121416
